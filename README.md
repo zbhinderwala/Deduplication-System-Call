@@ -1,5 +1,5 @@
 # Deduplication-System-Call
-************ README *****************************
+
 The submission contains the folowing files
 1. xdedup.c // Main c program that call the sys_xdedup syscall
 2. sys_xdedup.c // Implementation of deduplication system call
