@@ -1,4 +1,3 @@
-CSE 506 : HW1 
 ************ README *****************************
 The submission contains the folowing files
 1. xdedup.c // Main c program that call the sys_xdedup syscall
@@ -14,7 +13,8 @@ Implementation Details:
 
 1. xdedup.c
 This file has main function that reads the commands passed to the user.It stores the options passed if any.Firstly it check for required arguments passed then it goes onto to verify the flag passed and the required files or extra files passed along with the flags respectively.
-After the arguments with flags are verified. the input files are verified if they are accessible and readable/writable. This has been achieved by using stat call and checking the permissions of the files. Once all the checks are passed then these arguments are packed in to a void struct and sent to the syscall. The syscall either returns number of bytes n successfull or error number. The error number is then checked and appropriate message is displayed to the user.
+After the arguments with flags are verified. the input files are verified if they are accessible and readable/writable. This has been achieved by using stat call and checking the permissions of the files. Once all the checks are passed then these arguments are packed in to a void struct and sent to the syscall. The syscall either returns number of bytes n successfull or error number.
+The error number is then checked and appropriate message is displayed to the user.
 
 2. sys_xdedup.c
 This is the file which defines the deduplication system call xdedup. 
