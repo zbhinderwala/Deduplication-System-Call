@@ -7,7 +7,8 @@ The submission contains the folowing files
 4. kernel.config // Minimal kernel configuration
 5. README
 
-The system call for deduplication can be run with the following command
+The system call for deduplication can be run with the following command.
+
 ./xdedup [-npd] file1.txt file2.txt [file3.txt]
 
 Implementation Details:
